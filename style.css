@@ -14,15 +14,10 @@
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--main-color);
-	letter-spacing: 0.02em;
+	background-color: var(--white-color);
 }
-header {
-	display: flex;
-	font-size: 16px;
-}
+
 .header-nav {
-	align-items: baseline;
-	display: flex;
 	margin-left: 60px;
 }
 .logotype {
@@ -43,9 +38,6 @@ header {
 	text-decoration: none;
 }
 
-.header-list > li {
-	display: inline-block;
-}
 .header-list > li > a {
 	text-decoration: none;
 	color: var(--main-color);
@@ -67,7 +59,7 @@ header {
 	line-height: 1.5;
 }
 .header-cont > li {
-	display: inline-block;
+	cursor: pointer;
 }
 .header-mail {
 	color: var(--title-color);
@@ -76,7 +68,6 @@ header {
 .header-mail:hover,
 .header-mail:focus {
 	color: var(--accent-color);
-	cursor: pointer;
 }
 .header-tel {
 	color: var(--title-color);
@@ -91,11 +82,7 @@ header {
 /* main */
 .sec-first {
 	background-color: var(--main-color);
-
 	height: 600px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .sec-header {
@@ -103,23 +90,19 @@ header {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.11;
-	text-align: center;
-	/* text-transform: ; */
+	/* text-align: center; */
 	letter-spacing: 0.02em;
 }
 .sec-button {
 	background-color: var(--accent-color);
 	color: var(--white-color);
+	padding: 16px 32px;
 	font-weight: 500px;
 	font-size: 16px;
 	letter-spacing: 0.04em;
 	line-height: 1.5;
 	border: none;
-	display: block;
-	margin: 0 auto;
-	padding: 16px 32px;
 	border-radius: 3px;
-	margin-bottom: 50px;
 	cursor: pointer;
 }
 .sec-button:hover,
@@ -140,10 +123,7 @@ header {
 	clip-path: inset(50%);
 	margin: -1px;
 }
-.benefits-lists {
-	display: flex;
-	justify-content: center;
-}
+
 .benefits-lists > li {
 	list-style-type: none;
 }
@@ -169,17 +149,12 @@ p {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.1;
-	text-align: center;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 }
-.about-lists {
-	display: flex;
-	justify-content: center;
-}
+
 .about-lists > li {
 	list-style-type: none;
-	padding: 10px;
 }
 /* about */
 
@@ -195,21 +170,12 @@ p {
 	line-height: 1.1;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
-	text-align: center;
 }
-.team-lists {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0px 0px 32px;
-}
+
 .team-lists > li {
 	list-style-type: none;
 	width: 270px;
 	height: 368px;
-	flex-direction: column;
-	align-items: center;
-	padding: 10px;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 }
@@ -253,7 +219,6 @@ li {
 	list-style-type: none;
 }
 .header-list > li {
-	display: inline-block;
 	list-style-type: none;
 }
 
@@ -271,13 +236,9 @@ li {
 	clip-path: inset(50%);
 	margin: -1px;
 }
-.list-item {
-	display: flex;
-	justify-content: center;
-}
+
 .list-item > li {
 	list-style-type: none;
-	display: inline-block;
 }
 
 .list-button {
@@ -287,22 +248,17 @@ li {
 	line-height: 1.5;
 	background-color: var(--potrf-botton-bgr);
 	color: var(--portfolio-color-btn);
-	border: 1px solid #e7e9fc;
+	border: 1px solid var(--border-cards);
 	border-radius: 4px;
 	padding: 10px 20px;
+	cursor: pointer;
 }
 .list-button:hover,
 .list-button:focus {
 	background-color: var(--accent-color);
 	color: var(--white-color);
-	cursor: pointer;
 }
-.cards {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	margin-top: 30px;
-	margin-left: 30px;
-}
+
 .cards-lists {
 	width: 360px;
 	height: 420px;
